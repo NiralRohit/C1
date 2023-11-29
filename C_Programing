@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main () {
+   FILE *fp;
+   char string[] = "My Naughty Class";
+
+   fp = fopen( "file.txt" , "w" );
+   fwrite(string, 1 , sizeof(string) , fp );
+
+   fclose(fp);
+  
+   return(0);
+}
